@@ -15,10 +15,16 @@ class Building
     end
     get_name
   end
-# couldn't get sum to work
+
   def average_rent
    @units.sum do |unit|
     (unit.monthly_rent.to_f / 2).round(1)
   end
   end
+
+  def rented_units
+    @units.select do |unit|
+      unit.renter != nil
+    end
+end
 end

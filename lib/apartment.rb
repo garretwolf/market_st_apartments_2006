@@ -7,4 +7,8 @@ def initialize(info)
   @bathrooms = info[:bathrooms]
   @bedrooms = info[:bedrooms]
 end
+
+def add_renter(name)
+  name
+end
 end

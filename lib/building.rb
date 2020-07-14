@@ -26,5 +26,8 @@ class Building
     @units.select do |unit|
       unit.renter != nil
     end
-end
+  end
+
+  #def renter_with_highest_rent
+  #end
 end
